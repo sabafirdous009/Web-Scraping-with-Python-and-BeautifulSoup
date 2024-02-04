@@ -29,9 +29,4 @@ if response.status_code == 200:
     # Create a Pandas DataFrame from the list of dictionaries
     df = pd.DataFrame(doctors_data)
 
-    # Save the DataFrame to a CSV file
-    df.to_csv('doctors_data.csv', index=False)
 
-    print("Scraping and saving to CSV completed.")
-else:
-    print(f"Failed to retrieve the page. Status code: {response.status_code}")
